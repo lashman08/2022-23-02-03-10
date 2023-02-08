@@ -26,13 +26,25 @@ int main(void) {
  
    };
 
+  blockletter b = {
+    'b',
+    {
+      {'B', 'B', 'B', ' '},
+      {'B', ' ', ' ', 'B'},
+      {'B', 'B', 'B', ' '},
+      {'B', ' ', ' ', 'B'},
+      {'B', 'B', 'B', ' '},
+    }
+  };
+
   print_blockletter(a);
+  print_blockletter(b);
   
   return 0;
 }
 
 void print_blockletter(blockletter bl) {
-  // loop through each ro
+  // loop through each row
   for (int row = 0; row < 5; row++){
     // print each char in the row
     for (int col = 0; col < 4; col++){

@@ -26,19 +26,7 @@ int main(void) {
  
    };
 
-  blockletter b = {
-    'b',
-    {
-      {'B', 'B', 'B', ' '},
-      {'B', ' ', ' ', 'B'},
-      {'B', 'B', 'B', ' '},
-      {'B', ' ', ' ', 'B'},
-      {'B', 'B', 'B', ' '},
-    }
-  };
-
   print_blockletter(a);
-  print_blockletter(b);
   
   return 0;
 }

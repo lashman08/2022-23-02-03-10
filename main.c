@@ -125,6 +125,106 @@ blockletter l = {
     {'L', 'L', 'L', 'L'},
   }
 };
+blockletter n = {
+  'n',
+  {
+    {'N', ' ', ' ', 'N'},
+    {'N', 'N', ' ', 'N'},
+    {'N', ' ', 'N', 'N'},
+    {'N', ' ', ' ', 'N'},
+    {'N', ' ', ' ', 'N'},
+  }
+};
+blockletter o = {
+  'o',
+  {
+    {' ', 'O', 'O', ' '},
+    {'O', ' ', ' ', 'O'},
+    {'O', ' ', ' ', 'O'},
+    {'O', ' ', ' ', 'O'},
+    {' ', 'O', 'O', ' '},
+  }
+};
+blockletter p = {
+  'p',
+  {
+    {'P', 'P', 'P', ' '},
+    {'P', ' ', ' ', 'P'},
+    {'P', 'P', 'P', ' '},
+    {'P', ' ', ' ', ' '},
+    {'P', ' ', ' ', ' '},
+  }
+};
+blockletter q = {
+  'q',
+  {
+    {' ', 'Q', 'Q', ' '},
+    {'Q', ' ', ' ', 'Q'},
+    {'Q', ' ', ' ', 'Q'},
+    {'Q', ' ', 'Q', 'Q'},
+    {' ', 'Q', 'Q', ' '},
+  }
+};
+blockletter r = {
+  'r',
+  {
+    {'R', 'R', 'R', ' '},
+    {'R', ' ', ' ', 'R'},
+    {'R', 'R', 'R', ' '},
+    {'R', ' ', ' ', 'R'},
+    {'R', ' ', ' ', 'R'},
+  }
+};
+blockletter s = {
+  's',
+  {
+    {' ', 'S', 'S', 'S'},
+    {'S', ' ', ' ', ' '},
+    {' ', 'S', 'S', ' '},
+    {' ', ' ', ' ', 'S'},
+    {'S', 'S', 'S', ' '},
+  }
+};
+blockletter u = {
+  'u',
+  {
+    {'U', ' ', ' ', 'U'},
+    {'U', ' ', ' ', 'U'},
+    {'U', ' ', ' ', 'U'},
+    {'U', ' ', ' ', 'U'},
+    {'U', 'U', 'U', 'U'},
+  }
+};
+blockletter v = {
+  'v',
+  {
+    {'V', ' ', ' ', 'V'},
+    {'V', ' ', ' ', 'V'},
+    {'V', ' ', ' ', 'V'},
+    {'V', ' ', ' ', 'V'},
+    {' ', 'V', 'V', ' '},
+  }
+};
+blockletter x = {
+  'x',
+  {
+    {'X', ' ', ' ', 'X'},
+    {'X', ' ', ' ', 'X'},
+    {' ', 'X', 'X', ' '},
+    {'X', ' ', ' ', 'X'},
+    {'X', ' ', ' ', 'X'},
+  }
+};
+blockletter z = {
+  'z',
+  {
+    {'Z', 'Z', 'Z', 'Z'},
+    {' ', ' ', ' ', 'Z'},
+    {' ', ' ', 'Z', ' '},
+    {' ', 'Z', ' ', ' '},
+    {'Z', 'Z', 'Z', 'Z'},
+  }
+};
 void print_blockletter(blockletter bl);
 
 int main(void) {
@@ -166,6 +266,38 @@ int main(void) {
   else if (userletter == 'l'){
     print_blockletter(l);
   }
+  else if (userletter == 'n'){
+    print_blockletter(n);
+  }
+  else if (userletter == 'o'){
+    print_blockletter(o);
+  }
+  else if (userletter == 'p'){
+    print_blockletter(p);
+  }
+  else if (userletter == 'q'){
+    print_blockletter(q);
+  }
+  else if (userletter == 'r'){
+    print_blockletter(r);
+  }
+  else if (userletter == 's'){
+    print_blockletter(s);
+  }
+  else if (userletter == 'u'){
+    print_blockletter(u);
+  }
+  else if (userletter == 'v'){
+    print_blockletter(v);
+  }
+  else if (userletter == 'x'){
+    print_blockletter(x);
+  }
+  else if (userletter == 'z'){
+    print_blockletter(z);
+  }
+
+      
   else {
     printf("Unknown character\n");
   }

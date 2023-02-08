@@ -32,7 +32,7 @@ int main(void) {
 }
 
 void print_blockletter(blockletter bl) {
-  // loop through each row
+  // loop through each ro
   for (int row = 0; row < 5; row++){
     // print each char in the row
     for (int col = 0; col < 4; col++){

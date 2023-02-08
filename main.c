@@ -37,8 +37,20 @@ int main(void) {
     }
   };
 
+  blockletter c = {
+    'c',
+    {
+      {' ', 'C', 'C', ' '},
+      {'C', ' ', ' ', 'C'},
+      {'C', ' ', ' ', ' '},
+      {'C', ' ', ' ', 'C'},
+      {' ', 'C', 'C', ' '},
+    }
+  };
+
   print_blockletter(a);
   print_blockletter(b);
+  print_blockletter(c);
   
   return 0;
 }

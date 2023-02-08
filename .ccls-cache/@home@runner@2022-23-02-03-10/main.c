@@ -85,7 +85,46 @@ blockletter g = {
     {' ', 'G', 'G', 'G'},
   }
 };
-
+blockletter h = {
+  'h',
+  {
+    {'H', ' ', ' ', 'H'},
+    {'H', ' ', ' ', 'H'},
+    {'H', 'H', 'H', 'H'},
+    {'H', ' ', ' ', 'H'},
+    {'H', ' ', ' ', 'H'},
+  }
+};
+blockletter j = {
+  'j',
+  {
+    {'J', 'J', 'J', 'J'},
+    {' ', ' ', 'J', ' '},
+    {' ', ' ', 'J', ' '},
+    {' ', ' ', 'J', ' '},
+    {'J', 'J', ' ', ' '},
+  }
+};
+blockletter k = {
+  'k',
+  {
+    {'K', ' ', ' ', 'K'},
+    {'K', ' ', 'K', ' '},
+    {'K', 'K', ' ', ' '},
+    {'K', ' ', 'K', ' '},
+    {'K', ' ', ' ', 'K'},
+  }
+};
+blockletter l = {
+  'l',
+  {
+    {'L', ' ', ' ', ' '},
+    {'L', ' ', ' ', ' '},
+    {'L', ' ', ' ', ' '},
+    {'L', ' ', ' ', ' '},
+    {'L', 'L', 'L', 'L'},
+  }
+};
 void print_blockletter(blockletter bl);
 
 int main(void) {
@@ -114,6 +153,18 @@ int main(void) {
   }
   else if (userletter == 'g'){
     print_blockletter(g);
+  }
+  else if (userletter == 'h'){
+    print_blockletter(h);
+  }
+  else if (userletter == 'j'){
+    print_blockletter(j);
+  }
+  else if (userletter == 'k'){
+    print_blockletter(k);
+  }
+  else if (userletter == 'l'){
+    print_blockletter(l);
   }
   else {
     printf("Unknown character\n");

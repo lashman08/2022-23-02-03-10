@@ -10,11 +10,7 @@ typedef struct BLOCK_LETTER {
   char block[5][4];
 } blockletter;
 
-void print_blockletter(blockletter bl);
-
-int main(void) {
-
-    blockletter a = {
+blockletter a = {
       'a',
       {
       {' ', 'A', 'A', ' '},
@@ -25,32 +21,50 @@ int main(void) {
     }
  
    };
+blockletter b = {
+  'b',
+  {
+    {'B', 'B', 'B', ' '},
+    {'B', ' ', ' ', 'B'},
+    {'B', 'B', 'B', ' '},
+    {'B', ' ', ' ', 'B'},
+    {'B', 'B', 'B', ' '},
+  }
+};
+blockletter c = {
+  'c',
+  {
+    {' ', 'C', 'C', ' '},
+    {'C', ' ', ' ', 'C'},
+    {'C', ' ', ' ', ' '},
+    {'C', ' ', ' ', 'C'},
+    {' ', 'C', 'C', ' '},
+  }
+};
 
-  blockletter b = {
-    'b',
-    {
-      {'B', 'B', 'B', ' '},
-      {'B', ' ', ' ', 'B'},
-      {'B', 'B', 'B', ' '},
-      {'B', ' ', ' ', 'B'},
-      {'B', 'B', 'B', ' '},
-    }
-  };
+void print_blockletter(blockletter bl);
 
-  blockletter c = {
-    'c',
-    {
-      {' ', 'C', 'C', ' '},
-      {'C', ' ', ' ', 'C'},
-      {'C', ' ', ' ', ' '},
-      {'C', ' ', ' ', 'C'},
-      {' ', 'C', 'C', ' '},
-    }
-  };
+int main(void) {
 
-  print_blockletter(a);
-  print_blockletter(b);
-  print_blockletter(c);
+  char userletter;
+  printf("Yes master?");
+  scanf("%c", &userletter);
+
+  if (userletter == 'a'){
+    print_blockletter(a);
+  }
+  else if (userletter == 'b'){
+    print_blockletter(b);
+  }
+  else if (userletter == 'c'){
+    print_blockletter(c);
+  }
+  else {
+    printf("Unknown character\n");
+  }
+ 
+
+
   
   return 0;
 }

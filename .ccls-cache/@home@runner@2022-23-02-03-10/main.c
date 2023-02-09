@@ -1,19 +1,9 @@
 // block Letter Project
-
-//Goal - Process a
-// Goal 2 - b,c,d,e,f,g,h
-
 #include <stdio.h>
-
 typedef struct BLOCK_LETTER {
   char letter;
   char block[5][4];
 } blockletter;
-
-/* TODO
-  d, e, f, g, h, j, k, l, n, o, p, q, r, s, u, v, x, z
-
-  */
 blockletter a = {
       'a',
       {
@@ -295,16 +285,12 @@ int main(void) {
   }
   else if (userletter == 'z'){
     print_blockletter(z);
-  }
-
-      
+  }     
   else {
     printf("Unknown character\n");
   }
-  
   return 0;
 }
-
 void print_blockletter(blockletter bl) {
   // loop through each row
   for (int row = 0; row < 5; row++){
